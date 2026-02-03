@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpukat Kita by Pramanzapo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav">
+            <div class="logo">Alpukat Kita</div>
+            <!-- Hamburger Button -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav id="navMenu">
+                <a href="#home">Home</a>
+                <a href="#produk">Produk</a>
+                <a href="#tentang">Tentang</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div>
+                <h1>Camilan Keren dari Biji Alpukat</h1>
+                <p>Olahan biji alpukat yang sehat, kekinian, dan ramah lingkungan. Cocok buat generasi muda yang peduli
+                    gaya hidup sehat.</p>
+                <a href="#produk" class="btn">Lihat Produk</a>
+            </div>
+            <img src="assets/image/alpukat banner.png" alt="Avocado">
+        </div>
+    </section>
+
+    <section id="produk" class="reveal">
+        <div class="section-title">
+            <h2>Produk Kami</h2>
+            <p>Olahan unggulan dari biji alpukat</p>
+        </div>
+
+        <!-- WRAPPER PRODUK -->
+        <div class="products product-single">
+            <div class="card" data-name="Snack Avoseed" data-price="8000">
+                <img src="assets/image/cikie alpukatjpg.jpg" alt="Snack Avoseed">
+                <h3>Snack Avoseed</h3>
+                <p>Snack sehat dari biji alpukat, renyah dan bergizi.</p>
+                <strong>Rp 8.000</strong><br><br>
+                <button class="btn buy-btn">Beli</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="reveal">
+        <div class="section-title">
+            <h2>Kenapa Alpukat Kita ?</h2>
+            <p>Alasan kenapa produk kami berbeda</p>
+        </div>
+        <div class="products">
+            <div class="card">
+                <h3>🌱 Ramah Lingkungan</h3>
+                <p>Mengolah limbah biji alpukat menjadi produk bernilai.</p>
+            </div>
+            <div class="card">
+                <h3>💪 Sehat & Aman</h3>
+                <p>Tanpa bahan kimia berbahaya, aman untuk remaja.</p>
+            </div>
+            <div class="card">
+                <h3>✨ Desain Kekinian</h3>
+                <p>Kemasan modern sesuai gaya anak muda.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="reveal">
+        <div class="section-title">
+            <h2>Cara Produksi</h2>
+            <p>Dibuat dengan proses yang higienis dan berkelanjutan</p>
+        </div>
+        <div class="products">
+            <div class="card">
+                <h3>1. Seleksi Biji</h3>
+                <p>Biji alpukat pilihan dari buah segar.</p>
+            </div>
+            <div class="card">
+                <h3>2. Pengolahan</h3>
+                <p>Diproses dengan teknologi sederhana namun higienis.</p>
+            </div>
+            <div class="card">
+                <h3>3. Pengemasan</h3>
+                <p>Dikemas dengan desain menarik dan aman.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta reveal" id="tentang">
+        <h2>Alpukat Kita, Sehat, Unik, dan Ramah Lingkungan</h2>
+        <p>Kami membuka kesempatan bagi Anda untuk menjadi reseller resmi. Dapatkan produk berkualitas, sistem mudah,
+            dan
+            dukungan penuh untuk berkembang bersama.</p>
+        <br>
+        <a href="#" class="btn">Gabung Sekarang</a>
+    </section>
+
+    <!-- ===== FLOATING WHATSAPP ===== -->
+    <a href="https://wa.me/6283823204843" class="whatsapp-float" target="_blank" id="waButton">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <div id="waPopup"
+        style="
+     position: fixed; right: 50px; bottom: 150px; background: #fff; padding: 8px 14px; border-radius: 12px; box-shadow: 0 6px 20px rg (0,0,0,.15); font-size: 0.85rem; display: none; z-index: 1000;">
+        Layanan Pengaduan
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer" style="background:#1F7A5C; color:white; padding:40px 0; font-family:Arial, sans-serif;">
+        <div
+            style="max-width:1200px; margin:auto; display:flex; flex-wrap:wrap; justify-content:center; gap:50px; text-align:center;">
+
+            <!-- Logo & Instansi -->
+            <div style="flex:1; min-width:200px;">
+                <img src="assets/image/logo_cafe.png" alt="Logo Alpukat Kita" style="width:150px; margin-bottom:10px;">
+                <h3 style="margin:0; font-size:20px; font-weight:bold;">Alpukat Kita</h3>
+            </div>
+
+            <!-- Alamat -->
+            <div class="footer-address" style="flex:1; min-width:250px;">
+                <h4 style="margin-bottom:10px; font-size:18px;">Alamat</h4>
+                <p style="margin:0; color:#E6F4EA; font-size:14px; line-height:1.5; text-align: justify;">
+                    Jl. Arif Rahman Hakim, Kertosari, Cekok, Kec. Babadan, Kabupaten Ponorogo, Jawa Timur
+                </p>
+                <div style="margin-top:15px;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.488026027704!2d111.47612567588708!3d-7.843880677943951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e79a1def92e4d25%3A0x999934c6a356f2d6!2sMAN%201%20Ponorogo!5e0!3m2!1sid!2sid!4v1769226021258!5m2!1sid!2sid"
+                        width="300" height="150"
+                        style="border:0; border-radius:6px; display:block; max-width:100%; transform: translateX(-16px);"
+                        allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Sosial Media -->
+            <div style="flex:1; min-width:200px;">
+                <h4 style="margin-bottom:10px; font-size:18px;">Sosial Media</h4>
+                <div style="display:flex; justify-content:center; gap:15px; font-size:24px;">
+                    <a href="#" style="color:white; text-decoration:none;">
+                        <i class="bi bi-tiktok"></i>
+                    </a>
+                    <a href="#" style="color:white; text-decoration:none;">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="#" style="color:white; text-decoration:none;">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div
+            style="text-align:center; margin-top:30px; padding-top:15px; border-top:1px solid #3FAF8F; color:#D1FAE5; font-size:14px;">
+            <p>&copy; 2026 Alpukat Kita || By Pramanzapo MAN 1 PONOROGO.</p>
+        </div>
+    </footer>
+
+
+    <!-- ===== MODAL BELI ===== -->
+    <div class="modal" id="buyModal">
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Produk" style="width:120px;margin-bottom:1rem">
+            <h3 id="modalTitle"></h3>
+            <p>Harga satuan: <span id="modalPrice"></span></p>
+
+            <label>Jumlah:</label>
+            <input type="number" id="quantity" min="1" value="1" />
+
+            <p><strong>Total: <span id="totalPrice"></span></strong></p>
+            <br>
+
+            <!-- TOMBOL WHATSAPP -->
+            <button class="btn" onclick="sendToWhatsApp()">Pesan via WhatsApp</button>
+            <br><br>
+            <button class="btn" style="background:#ccc;color:#000" onclick="closeModal()">Tutup</button>
+        </div>
+    </div>
+
+    <script src="assets/script.js"></script>
+
+</body>
+
+</html>
